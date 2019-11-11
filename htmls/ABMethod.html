@@ -12,6 +12,214 @@
 </head>
 
 <body class="background-image">
+    <div></div>
+    <!-- background="./maths.jpg" -->
+    <!--It includes the top navigation part of the page-->
+    <nav role="navigation" class="navbar">
+        <div class="nav-wrapper container center-align ">
+            <a id="logo-container" href="#" class="brand-logo">
+                <u class="u1">
+            <div class="Heading">    
+            <h4 class="main-heading1">Maths-Mini-Proj</h4>
+            <h2 class="main-heading2">NUMALLY-ODE</h2>
+            </div>
+        </u></a>
+        </div>
+    </nav>
+    <!--It includes the introductory body of the page-->
+    <div class="container">
+        <u><h1 class="Insert-Heading"> Differential Equation Solution for first Order </h1></u>
+        <div class="row center">
+        </div>
+    </div>
+
+    <div id="data-input" class="row"></div>
+    <u><h4 id="heading1" class="header col s12 light text-blue">Includes both Numerical and Analytical Solution for Given ODE </h5></u><br>
+    <br>
+    <div class="methods">
+
+    </div>
+    <form id="Input-Container" class="col s12">
+        <div class="row1"></div>
+        <u><h4 id="heading1" class="header col s12 light text-blue">Includes both numerical and Analytical Solution for Given ODE </h5></u><br>
+        <div class="row2">
+            <div class="input-field col s10">
+                <input placeholder="Given Equation" id="exp-input" type="text" class="card-panel  green darken-4">
+                <label for="Given Equation">Given Equation</label>
+            </div>
+            <div class="input-field col s7">
+                <tr></tr><input placeholder="final value of x" id="x-output" type="text" class=" card-panel   green darken-4">
+                <label for="final value of x">final value of x</label>
+            </div>
+            <div class="input-field col s7">
+                <input placeholder="Step-Length" id="h-input" type="text" class=" card-panel   green darken-4">
+                <label for="Step-Length">Step-Length</label>
+            </div>
+            <div class="input-field col s7">
+                <input placeholder="Modifications" id="modification" type="text" class=" card-panel   green darken-4">
+                <label for="Step-Length">Modifications</label>
+            </div>
+        </div>
+        <!-- table content -->
+        <form action="">
+            <table class="highlight centered responsive-table" id="table-contents">
+                <thead>
+                    <tr>
+                        <th>
+                            <div class="row">
+                                <div class="input-field col s5" id="values">
+                                    <label style="color: rgba(240, 16, 16, 0.945);">Values</label>
+                                </div>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="row">
+                                <div class="input-field col s5" id="xvalue">
+                                    <label style="color: rgba(240, 16, 16, 0.945);">Values for X</label>
+                                </div>
+                            </div>
+                        </th>
+
+                        <th>
+                            <div class="row">
+                                <div class="input-field col s5" id="yvalue">
+                                    <label style="color: rgba(240, 16, 16, 0.945);">Values for Y</label>
+                                </div>
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="row">
+                                <div class="input-field col s5">
+                                    <label class="active" for="first_name2">1-value</label>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="row">
+                                <div class="input-field col s5">
+                                    <input placeholder="Xo-value" id="Xo-value" type="text" class="card-panel   green darken-4">
+                                    <label class="active" for="first_name2">Xo-value</label>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="row">
+                                <div class="input-field col s5">
+                                    <input placeholder="Y1-value" id="Yo-value" type="text" class="card-panel   green darken-4">
+                                    <label class="active" for="first_name2"> Yo-value</label>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="row">
+                                <div class="input-field col s5">
+                                    <label class="active" for="first_name2">2-value</label>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="row">
+                                <div class="input-field col s5">
+                                    <input placeholder="X1-value" id="X1-value" type="text" class="card-panel   green darken-4">
+                                    <label class="active" for="first_name2">X1-value </label>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="row">
+                                <div class="input-field col s5">
+                                    <input placeholder="Y1-value" id="Y1-value" type="text" class="card-panel   green darken-4">
+                                    <label class="active" for="first_name2">Y1-value </label>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="row">
+                                <div class="input-field col s5">
+                                    <label class="active" for="first_name2">3-value</label>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="row">
+                                <div class="input-field col s5">
+                                    <input placeholder="X3-value" id="X2-value" type="text" class="card-panel   green darken-4">
+                                    <label class="active" for="first_name2">X2-value</label>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="row">
+                                <div class="input-field col s5">
+                                    <input placeholder="Y3-value" id="Y2-value" type="text" class="card-panel   green darken-4">
+                                    <label class="active" for="first_name2">Y2-value</label>
+                                </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="row">
+                                <div class="input-field col s5">
+                                    <label class="active" for="first_name2">4-value</label>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="row">
+                                <div class="input-field col s5">
+                                    <input placeholder="X3-value" id="X3-value" type="text" class="card-panel   green darken-4">
+                                    <label class="active" for="first_name2">X3-value</label>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="row">
+                                <div class="input-field col s5">
+                                    <input placeholder="Y3-value" id="Y3-value" type="text" class="card-panel   green darken-4">
+                                    <label class="active" for="first_name2">Y3-value</label>
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+        <form action="">
+            <button type="submit" id="submit" class="waves-effect waves-light btn">
+                    Enter to Submit
+                    <i class="material-icons right">send</i>
+                    </button>
+            <script src="../methods/ABMethod.js" type="text/javascript"></script>
+            <script src="../methods/Analyticalabmm.js" type="text/javascript"></script>
+        </form>
+
+    </form>
+    <form action="">
+        <div id="data-output"></div>
+        <br>
+        <!--It includes the solutions of the Given Equation in RK method-->
+        <div id="data-output"></div>
+        <br>
+        <!--It includes the solutions of the Given Equation in RK method-->
+        <form id="Output-Conatainer">
+            <div class="final-value">
+                <h4 id="final"></h4>
+            </div>
+            <div class="final-value">
+                <h4 id="finalanaly"></h4>
+            </div>
+        </form>
+
+
+    </form>
 
 </body>
 

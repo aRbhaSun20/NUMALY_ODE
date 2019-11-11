@@ -6,9 +6,8 @@ document.getElementById("submit").addEventListener('click', function(evnt) {
     var equ = document.getElementById('exp-input').value
 
     var initial = {
-        xi: eval(document.getElementById('x-input').value), //initial value of x
-        yi: eval(document.getElementById('y-input').value), //initial value of y
-        h: eval(document.getElementById('h-input').value), //step-length
+        xi: eval(document.getElementById('Xo-value').value), //initial value of x
+        yi: eval(document.getElementById('Yo-value').value), //initial value of y
         xo: eval(document.getElementById('x-output').value), //final value of x
 
     }
@@ -25,7 +24,7 @@ document.getElementById("submit").addEventListener('click', function(evnt) {
         h: 0.001,
 
     }
-    var nofte = (constants.b - constants.a) / constants.h
+    var nofte = (constants.b - constants.a) / (constants.h * 5)
     var sum = 0;
 
     function integrate() {
@@ -38,7 +37,7 @@ document.getElementById("submit").addEventListener('click', function(evnt) {
 
     let final = integrate().toFixed(5)
 
-    document.getElementById('finalanaly').innerHTML = " The Analytical Solution for given Equation = " + final + "expected H = " + constants.h
+    document.getElementById('finalanaly').innerHTML = " The Analytical Solution for given Equation = " + final + " expected H = " + constants.h
 
 
 }, false)
