@@ -38,7 +38,7 @@ document.getElementById("submit").addEventListener('click', function(evnt) {
 
     let final = integrate().toFixed(5)
 
-    document.getElementById('finalanaly').innerHTML = " The Analytical Solution for given Equation = " + final + "expected H = " + constants.h
+    document.getElementById('finalanaly').innerHTML = " The Analytical Solution for given Equation = " + final;
 
 
 }, false)

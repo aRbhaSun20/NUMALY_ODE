@@ -1,12 +1,6 @@
-.background-image {
-    background-image: url("../pictures/maths5.jpg");
-}
-
 .navbar {
     text-align: center;
     min-height: 180px;
-    margin-left: 0px;
-    min-width: 100%;
     font-family: cursive;
     background: rgba(50, 224, 34, 0.74);
     margin-bottom: -42px;
@@ -23,18 +17,22 @@
     padding-left: 10px;
 }
 
-.main-heading1 {
+
+/* #main-heading1 {
     text-align: center;
-    padding-right: 150px;
+    padding-left: -150px;
+    padding-right: 750px;
     padding-top: 5pt;
     margin-bottom: -25px;
     color: rgba(214, 82, 108, 0.65);
     border: blueviolet;
-}
+} */
 
-.main-heading2 {
-    padding-right: 100px;
+#main-heading2 {
+    text-align: justify;
+    padding-right: 0px;
     padding-top: 5pt;
+    padding-left: 0px;
 }
 
 .container {
@@ -177,7 +175,6 @@
     margin-left: 0px;
     min-width: 100%;
     font-family: cursive;
-    background: rgba(241, 140, 7, 0.842);
     margin-bottom: -42px;
     padding-right: 330px;
 }

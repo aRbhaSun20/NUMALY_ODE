@@ -7,16 +7,15 @@ document.getElementById("submit").addEventListener('click', function(evnt) {
     var equ = document.getElementById('exp-input').value
 
     var initial = {
-        xou: eval(document.getElementById('x-output').value), //final value of x
         h: eval(document.getElementById('h-input').value), //step-length
         mod: eval(document.getElementById('modification').value),
-        xo: eval(document.getElementById('Xo-value').value),
-        yo: eval(document.getElementById('Yo-value').value),
+        xo: eval(document.getElementById('x-input').value),
+        yo: eval(document.getElementById('y-input').value),
         x1: eval(document.getElementById('X1-value').value),
         y1: eval(document.getElementById('Y1-value').value),
         x2: eval(document.getElementById('X2-value').value),
         y2: eval(document.getElementById('Y2-value').value),
-        x3: eval(document.getElementById('X3-value').value),
+        x3: eval(document.getElementById('x-output').value),
         y3: eval(document.getElementById('Y3-value').value),
 
 
@@ -36,7 +35,7 @@ document.getElementById("submit").addEventListener('click', function(evnt) {
     }
 
     function corrector(y) {
-        var YfinalC = initial.y3 + initial.h * ((zfun(initial.x1, initial.y1)) - (5 * (zfun(initial.x2, initial.y2))) + (19 * zfun(initial.x3, initial.y3)) + (9 * zfun(initial.xou, y))) / 24;
+        var YfinalC = initial.y3 + initial.h * ((zfun(initial.x1, initial.y1)) - (5 * (zfun(initial.x2, initial.y2))) + (19 * zfun(initial.x3, initial.y3)) + (9 * zfun(initial.x3, y))) / 24;
         console.log(YfinalC)
         return YfinalC;
     }
